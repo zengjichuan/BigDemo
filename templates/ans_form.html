@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form action="/italk/" method="get">
+        <input type="text" name="q">
+        <input type="submit" value="Send">
+</form>
+<p>You: <strong>{{ ask }}</strong></p>
+{% if ans %}
+    <p>iTalk: {{ ans }}</p>
+{% else %}
+    <p>iTalk: Can you change another topic?</p>
+{% endif %}
+</body>
+</html>
